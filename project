@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+/**
+ * This GPA calculator was created by @uygarcode.
+ * You can find more projects and tutorials at https://github.com/uygarcode
+ */
+
+public class GPA {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        
+        // Asking the user to input their Math average.
+        System.out.println("Enter your Math average: ");
+        double math = scanner.nextDouble();
+
+        // Asking the user to input their English average.
+        System.out.println("Enter your English average: ");
+        double english = scanner.nextDouble();
+
+        // Asking the user to input their Chemistry average.
+        System.out.println("Enter your Chemistry average: ");
+        double chemistry = scanner.nextDouble();
+
+        // Asking the user to input their Physics average.
+        System.out.println("Enter your Physics average: ");
+        double physics = scanner.nextDouble();
+
+        // Asking the user to input their Philosophy average.
+        System.out.println("Enter your Philosophy average: ");
+        double philosophy = scanner.nextDouble();
+
+        // Asking the user to input their Geography average.
+        System.out.println("Enter your Geography average: ");
+        double geography = scanner.nextDouble();
+
+        // Asking the user to input their History average.
+        System.out.println("Enter your History average: ");
+        double history = scanner.nextDouble();
+
+        // Asking the user to input their Foreign Language average.
+        System.out.println("Enter your Foreign Language average: ");
+        double foreignLanguage = scanner.nextDouble();
+
+        // Asking the user to input their Music average.
+        System.out.println("Enter your Music average: ");
+        double music = scanner.nextDouble();
+
+        // Calculating the average of all subjects.
+        double average = (math + english + chemistry + physics + philosophy + geography + history + foreignLanguage + music) / 9;
+
+        // Printing the calculated GPA to the screen.
+        System.out.println("Your GPA is " + average);
+
+        // Closing the Scanner object to free up resources.
+        scanner.close();
+    }
+}
